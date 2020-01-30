@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 Schematron for Name Space Id:disp  Version:1.6.0.0 - Thu Mar 31 14:31:25 PDT 2016 -->
-  <!-- Generated from the PDS4 Information Model Version 1.6.0.0 - System Build 6b -->
+  <!-- PDS4 Schematron for Name Space Id:disp  Version:1.7.0.0 - Wed Sep 28 11:08:52 PDT 2016 -->
+  <!-- Generated from the PDS4 Information Model Version 1.7.0.0 - System Build 7a -->
   <!-- *** This PDS4 schematron file is an operational deliverable. *** -->
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
 
@@ -37,10 +37,10 @@
   </sch:pattern>
   <sch:pattern>
     <sch:rule context="disp:Display_Settings/pds:Local_Internal_Reference">
-      <sch:assert test="disp:local_identifier_reference = //pds:*/pds:*/(pds:Array|pds:Array_2D|pds:Array_2D_Image|pds:Array_2D_Map|pds:Array_2D_Spectrum|pds:Array_3D|pds:Array_3D_Image|pds:Array_3D_Movie|pds:Array_3D_Spectrum)/pds:local_identifier">
-        Display Dictionary: In the disp:Local_Internal_Reference class, the value of the disp:local_identifier_reference must match the value of the pds:local_identifer of an Array class or sub-class within the File_Area.</sch:assert>
-      <sch:assert test="disp:local_reference_type = ('display_settings_to_array')">
-        Display_Dictionary: In the disp:Local_Internal_Reference class, the value of the disp:local_reference_type must be 'display_settings_to_array'.</sch:assert>
+      <sch:assert test="pds:local_identifier_reference = //pds:*/pds:*/(pds:Array|pds:Array_2D|pds:Array_2D_Image|pds:Array_2D_Map|pds:Array_2D_Spectrum|pds:Array_3D|pds:Array_3D_Image|pds:Array_3D_Movie|pds:Array_3D_Spectrum)/pds:local_identifier">
+        Display Dictionary: In the pds:Local_Internal_Reference class, the value of the pds:local_identifier_reference must match the value of the pds:local_identifer of an Array class or sub-class within the File_Area.</sch:assert>
+      <sch:assert test="pds:local_reference_type = ('display_settings_to_array')">
+        Display_Dictionary: In the pds:Local_Internal_Reference class, the value of the pds:local_reference_type must be 'display_settings_to_array'.</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
