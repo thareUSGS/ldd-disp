@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 Schematron for Name Space Id:disp  Version:1.3.0.1 - Mon Sep 29 19:28:04 PDT 2014 -->
-  <!-- Generated from the PDS4 Information Model Version 1.3.0.1 - System Build 5a -->
+  <!-- PDS4 Schematron for Name Space Id:disp  Version:1.5.0.0 - Sat Sep 26 08:38:56 PDT 2015 -->
+  <!-- Generated from the PDS4 Information Model Version 1.5.0.0 - System Build 6a -->
   <!-- *** This PDS4 schematron file is an operational deliverable. *** -->
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
 
