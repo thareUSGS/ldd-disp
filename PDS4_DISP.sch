@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 Schematron for PDS4_1.0.0.3  Thu Jun 06 09:06:12 PDT 2013 -->
-  <!-- Generated from the PDS4 Information Model V1.0.0.3 -->
-  <!-- *** This PDS4 schematron file is a preliminary deliverable. *** -->
-  <!-- *** It is being made available for review and testing. *** -->
+  <!-- PDS4 Schematron for Name Space Id:disp  Version:1.0.0.4 - Fri Aug 09 18:13:15 PDT 2013 -->
+  <!-- Generated from the PDS4 Information Model Version 1.0.0.0 - System Build 3b -->
+  <!-- *** This PDS4 schematron file is an operational deliverable. *** -->
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
 
-  <sch:title>Sample Schematron using XPath 2.0</sch:title>
+  <sch:title>Schematron using XPath 2.0</sch:title>
 
-  <sch:ns uri="http://pds.nasa.gov/pds4/pds/v1003" prefix="disp"/>
+  <sch:ns uri="http://pds.nasa.gov/pds4/disp/v1" prefix="disp"/>
 
 		   <!-- ================================================ -->
 		   <!-- NOTE:  There are two types of schematron rules.  -->
@@ -17,26 +16,44 @@
 		   <!--        lists. These two types of rules have been -->
 		   <!--        merged together in the rules below.       -->
 		   <!-- ================================================ -->
+  <sch:pattern>
+    <sch:rule context="disp:Default_Display_Settings">
+      <sch:assert test="if (disp:horizontal_display_direction) then disp:horizontal_display_direction = ('Left', 'Right') else true()">
+        The attribute disp:horizontal_display_direction must be equal to one of the following values 'Left', 'Right'.</sch:assert>
+      <sch:assert test="if (disp:vertical_display_direction) then disp:vertical_display_direction = ('Down', 'Up') else true()">
+        The attribute disp:vertical_display_direction must be equal to one of the following values 'Down', 'Up'.</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:rule context="disp:Default_Display_Settings_Color">
+      <sch:assert test="if (disp:horizontal_display_direction) then disp:horizontal_display_direction = ('Left', 'Right') else true()">
+        The attribute disp:horizontal_display_direction must be equal to one of the following values 'Left', 'Right'.</sch:assert>
+      <sch:assert test="if (disp:vertical_display_direction) then disp:vertical_display_direction = ('Down', 'Up') else true()">
+        The attribute disp:vertical_display_direction must be equal to one of the following values 'Down', 'Up'.</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:rule context="disp:Default_Display_Settings_Color_Movie">
+      <sch:assert test="if (disp:loop_flag) then disp:loop_flag = ('false', 'true') else true()">
+        The attribute disp:loop_flag must be equal to one of the following values 'false', 'true'.</sch:assert>
+      <sch:assert test="if (disp:loop_back_and_forth_flag) then disp:loop_back_and_forth_flag = ('false', 'true') else true()">
+        The attribute disp:loop_back_and_forth_flag must be equal to one of the following values 'false', 'true'.</sch:assert>
+      <sch:assert test="if (disp:horizontal_display_direction) then disp:horizontal_display_direction = ('Left', 'Right') else true()">
+        The attribute disp:horizontal_display_direction must be equal to one of the following values 'Left', 'Right'.</sch:assert>
+      <sch:assert test="if (disp:vertical_display_direction) then disp:vertical_display_direction = ('Down', 'Up') else true()">
+        The attribute disp:vertical_display_direction must be equal to one of the following values 'Down', 'Up'.</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:rule context="disp:Default_Display_Settings_Movie">
+      <sch:assert test="if (disp:loop_flag) then disp:loop_flag = ('false', 'true') else true()">
+        The attribute disp:loop_flag must be equal to one of the following values 'false', 'true'.</sch:assert>
+      <sch:assert test="if (disp:loop_back_and_forth_flag) then disp:loop_back_and_forth_flag = ('false', 'true') else true()">
+        The attribute disp:loop_back_and_forth_flag must be equal to one of the following values 'false', 'true'.</sch:assert>
+      <sch:assert test="if (disp:horizontal_display_direction) then disp:horizontal_display_direction = ('Left', 'Right') else true()">
+        The attribute disp:horizontal_display_direction must be equal to one of the following values 'Left', 'Right'.</sch:assert>
+      <sch:assert test="if (disp:vertical_display_direction) then disp:vertical_display_direction = ('Down', 'Up') else true()">
+        The attribute disp:vertical_display_direction must be equal to one of the following values 'Down', 'Up'.</sch:assert>
+    </sch:rule>
+  </sch:pattern>
 </sch:schema>
-    <!-- Begin assert statements for schematron - Enumerated Values -->
-    <!-- <xs:assert test="disp:horizontal_display_direction = ('left to right', 'right to left')"/> -->
-    <!-- <xs:assert test="disp:vertical_display_direction = ('top to bottom', 'bottom to top')"/> -->
-    <!-- <xs:assert test="disp:loop_flag = ('true', 'false')"/> -->
-    <!-- <xs:assert test="disp:loop_back_and_forth_flag = ('true', 'false')"/> -->
-    <!-- End assert statements for schematron - Enumerated Values -->
-          <!-- Begin assert statements for schematron - Enumerated Values -->
-          <!-- <xs:assert test="disp:loop_flag = ('true', 'false')"/> -->
-          <!-- <xs:assert test="disp:loop_back_and_forth_flag = ('true', 'false')"/> -->
-          <!-- End assert statements for schematron - Enumerated Values -->
-            <!-- Begin assert statements for schematron - Enumerated Values -->
-            <!-- <xs:assert test="disp:loop_flag = ('true', 'false')"/> -->
-            <!-- <xs:assert test="disp:loop_back_and_forth_flag = ('true', 'false')"/> -->
-            <!-- End assert statements for schematron - Enumerated Values -->
-              <!-- Begin assert statements for schematron - Enumerated Values -->
-              <!-- <xs:assert test="disp:loop_flag = ('true', 'false')"/> -->
-              <!-- <xs:assert test="disp:loop_back_and_forth_flag = ('true', 'false')"/> -->
-              <!-- End assert statements for schematron - Enumerated Values -->
-     <!-- unit_of_measure_type=Units_of_Frame_Rate -->
-        <!-- specified_unit_id=TBD_default_unit_id -->
-     <!-- unit_of_measure_type=Units_of_Time -->
-        <!-- specified_unit_id=TBD_default_unit_id -->
