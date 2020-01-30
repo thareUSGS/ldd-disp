@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 XML/Schema for Name Space Id:disp  Version:1.9.0.0 - Fri Sep 29 08:39:37 PDT 2017 -->
-  <!-- Generated from the PDS4 Information Model Version 1.9.0.0 - System Build 8a -->
-  <!-- *** This PDS4 product schema is an operational deliverable. *** -->
+  <!-- TBD_modelShortName XML/Schema for Name Space Id:disp  Version:1.11.0.0 - Sun Sep 23 16:29:35 PDT 2018 -->
+  <!-- Generated from the TBD_modelShortName Information Model Version 1.11.0.0 - System Build 9a -->
+  <!-- *** This TBD_modelShortName product schema is an operational deliverable. *** -->
   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://pds.nasa.gov/pds4/disp/v1"
     xmlns:disp="http://pds.nasa.gov/pds4/disp/v1"
     xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
     elementFormDefault="qualified"
     attributeFormDefault="unqualified"
-    version="1.9.0.0">
+    version="1.11.0.0">
  
-    <xs:import namespace="http://pds.nasa.gov/pds4/pds/v1" schemaLocation="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1900.xsd"/>
+    <xs:import namespace="http://pds.nasa.gov/pds4/pds/v1" schemaLocation="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd"/>
  
   <xs:annotation>
     <xs:documentation>This dictionary describes how to display Array
@@ -65,9 +65,9 @@
     </xs:annotation>
     <xs:sequence>
       <xs:element ref="pds:Local_Internal_Reference" minOccurs="1" maxOccurs="1"> </xs:element>
-      <xs:element name="Display_Direction" type="disp:Display_Direction" minOccurs="1" maxOccurs="1"> </xs:element>
-      <xs:element name="Color_Display_Settings" type="disp:Color_Display_Settings" minOccurs="0" maxOccurs="1"> </xs:element>
-      <xs:element name="Movie_Display_Settings" type="disp:Movie_Display_Settings" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element ref="disp:Display_Direction" minOccurs="1" maxOccurs="1"> </xs:element>
+      <xs:element ref="disp:Color_Display_Settings" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element ref="disp:Movie_Display_Settings" minOccurs="0" maxOccurs="1"> </xs:element>
     </xs:sequence>
   </xs:complexType>
 
@@ -97,7 +97,7 @@
       <xs:documentation>This section contains the simpleTypes that provide more constraints
         than those at the base data type level. The simpleTypes defined here build on the base data
         types. This is another component of the common dictionary and therefore falls within the
-        pds namespace.
+        common namespace.
       </xs:documentation>
     </xs:annotation>
 
@@ -133,7 +133,6 @@
 
   <xs:simpleType name="frame_rate_WO_Units">
     <xs:restriction base="pds:ASCII_Real">
-    	<xs:pattern value='[-+]?[0-9]+(\.?[0-9]+)?([eE][-+]?[0-9]+)?'/>
      <xs:minInclusive value="1.0"/>
      <xs:maxInclusive value="1.7976931348623157e308"/>
 	   </xs:restriction>
@@ -221,7 +220,6 @@
 
   <xs:simpleType name="loop_delay_WO_Units">
     <xs:restriction base="pds:ASCII_Real">
-    	<xs:pattern value='[-+]?[0-9]+(\.?[0-9]+)?([eE][-+]?[0-9]+)?'/>
      <xs:minInclusive value="0.0"/>
      <xs:maxInclusive value="1.7976931348623157e308"/>
 	   </xs:restriction>

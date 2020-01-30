@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 Schematron for Name Space Id:disp  Version:1.9.0.0 - Fri Sep 29 08:39:37 PDT 2017 -->
-  <!-- Generated from the PDS4 Information Model Version 1.9.0.0 - System Build 8a -->
-  <!-- *** This PDS4 schematron file is an operational deliverable. *** -->
+  <!-- TBD_modelShortName Schematron for Name Space Id:disp  Version:1.11.0.0 - Sun Sep 23 16:29:35 PDT 2018 -->
+  <!-- Generated from the TBD_modelShortName Information Model Version 1.11.0.0 - System Build 9a -->
+  <!-- *** This TBD_modelShortName schematron file is an operational deliverable. *** -->
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
 
   <sch:title>Schematron using XPath 2.0</sch:title>
