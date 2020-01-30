@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 XML/Schema for Name Space Id:disp  Version:1.5.0.0 - Sat Sep 26 08:38:56 PDT 2015 -->
-  <!-- Generated from the PDS4 Information Model Version 1.5.0.0 - System Build 6a -->
+  <!-- PDS4 XML/Schema for Name Space Id:disp  Version:1.6.0.0 - Thu Mar 31 14:31:25 PDT 2016 -->
+  <!-- Generated from the PDS4 Information Model Version 1.6.0.0 - System Build 6b -->
   <!-- *** This PDS4 product schema is an operational deliverable. *** -->
   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://pds.nasa.gov/pds4/disp/v1"
@@ -8,9 +8,9 @@
     xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
     elementFormDefault="qualified"
     attributeFormDefault="unqualified"
-    version="1.5.0.0">
+    version="1.6.0.0">
  
-    <xs:import namespace="http://pds.nasa.gov/pds4/pds/v1" schemaLocation="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1500.xsd"/>
+    <xs:import namespace="http://pds.nasa.gov/pds4/pds/v1" schemaLocation="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1600.xsd"/>
  
   <xs:annotation>
     <xs:documentation>This dictionary describes how to display Array
