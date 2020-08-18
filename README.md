@@ -1,13 +1,13 @@
-# Imaging Local Data Dictionary (LDD)
+# Display Local Data Dictionary (LDD)
 
-The Imaging dictionary contains high level classes and attributes used in imaging and spectrometer products.
+The Display dictionary contains high level classes and attributes used in imaging and spectrometer products.
 It also contains classes with attributes used during active mission operations.
 
 Steward: [IMG Node](https://pds-imaging.jpl.nasa.gov/)
 
 Only one LDD source version is kept such that it can be managed by github.
 
-- [1.E.0.0](src)
+- [1.B.0.0](src)
 
 ## Versions
 
@@ -19,7 +19,7 @@ The build process insures compatiblity of the LDD with the core information mode
 
 This LDD has been released for the following versions of the PDS4 information model:
 
-- [PDS4 IM v1.B.0.0 (IMG LDD v1.4.0.0)](build/1.B.0.0_1.4.0.0)
+- [PDS4 IM v1.B.0.0 (DISP LDD v1.4.0.0)](build/1.B.0.0_1.4.0.0)
 
 
 ## Notes
